@@ -191,7 +191,7 @@ We voegen een select-optie toe, waaruit u kan kiezen uit alle genres.
 
 ![Update van form in Index.cshtml](img/soundindex3.png)
 
-Niet alleen het uiterlijk moet veranderd worden, ook moeten we nog wat aanpassen zodat de data gevonden kan worden. Onder het form vindt u een <table>. 
+Niet alleen het uiterlijk moet veranderd worden, ook moeten we nog wat aanpassen zodat de data gevonden kan worden. Onder het form vindt u een table tag. 
 
 ![Table in Index.cshtml (OUD)](img/soundsindextable1.png)
 
@@ -199,7 +199,7 @@ We voegen hier telkens `.sounds[0]` toe, zoals u kan hier kan zien:
 
 ![Update van Table in Index.cshtml (NIEUW)](img/soundsindextable2.png)
 
-Onder de <thead> ziet u een foreach-loop staan. Ook hier moet een kleine aanpassing gebeuren: 
+Onder de thead tag ziet u een foreach-loop staan. Ook hier moet een kleine aanpassing gebeuren: 
 
 ![foreach in Index.cshtml (OUD)](img/soundsindexforeach1.png)
 
@@ -339,6 +339,63 @@ Klik op Register.
 U ziet nu bovenaan in uw navigatiebalk "Hello ...!" verschijnen. U bent ingelogd!
 
 ![Ingelogd](img/siteHellologgedin.png)
+
+## Link leggen
+
+Tot hiertoe moesten we steeds /sounds toevoegen aan de url om naar onze webapp te gaan. Hier leg ik uit hoe je dat veranderd.
+
+Zoals je misschien al hebt gemerkt, doen de knoppen WebApp en Home in de navigatiebalk exact hetzelfde: ze brengen je naar de Home Page.
+Wat als we de knop met het grootste lettertype nu Home noemen en naar Home laten referreren, en de knop met het kleinere lettertype Sounds noemen en die naar onze webapp laten referreren? Dat maakt het ons en de gebruiker een pak makkelijker om de app te vinden.
+
+Ga in de map Views naar de map Shared en klik dan op \_Layout.cshtml .
+
+Verander een paar dingetjes (rood aangeduid in tweede foto) van:
+
+![nav OUD](img/navtags1.png)
+
+naar:
+
+![nav NIEUW](img/navtags2.png)
+
+Test maar eens uit! 
+Ps: Omdat \_Layout.cshtml een 'Shared' file is, zal dit ineens op alle pagina's worden toegepast: de navigatiebalk blijft op alle pagina's hetzelfde.
+
+## Titels
+
+Wanneer we onze app bekijken, zien we nog de gewone "Index" titel. Deze wil ik veranderen naar "Sounds".
+Ook hetgeen we in ons google-tab zien helemaal bovenaan de site, wil ik veranderen van "Index - WebApp" naar "Sounds".
+
+Ga in de map Views naar de map Sounds en klik op Index.cshtml .
+
+Verander hier twee keer "Index" naar "Sounds". 
+
+![Verander de titel](img/veranderTitel.png)
+
+Zo is onze titel al klaar, maar hebben we nog steeds een vervelende "- WebApp" bovenaan.
+
+Ga in de map Views naar de map Shared en klik dan op \_Layout.cshtml .
+
+Bovenaan ziet u bijna meteen de tag title. Hier kan u de "- WebApp" gerust verwijderen. Omdat \_Layout.cshtml een 'Shared' file is, zal dit ineens op alle pagina's worden toegepast.
+
+![Verander de titel](img/veranderViewdataTitle.png)
+
+Ziehier: de nieuwe navigatiebalk en titel:
+
+![Nieuwe navigatiebalk en titel](img/nieuweNavbar.png)
+
+En ook het tabblad heeft een andere naam: 
+
+![Nieuwe tabbladnaam](img/tabbladnaam.png)
+
+## Copyright
+
+Sommigen zullen ook graag de standaard Copyright willen aanpassen.
+
+Ga in de map Views naar de map Shared en klik dan op \_Layout.cshtml . Net onder de code voor de navigatiebalk vindt u de footer tag. Hierin kan u de standaard copyright-tekst aanpassen.
+
+![Nieuwe copyright-tekst](img/copyright.png)
+
+Controleer maar eens op je site!
 
 Extra opties: COMING SOON !!
 - home page: update
