@@ -225,8 +225,122 @@ Moest u het nog niet geprobeerd hebben, u kan ook op Genre, Title en Artist tege
 
 Gefeliciteerd, u heeft nu een werkende app. 
 
+## Google Authentication
+
+We hebben in het begin gekozen voor Individual User Accounts, net om er later dit aan toe te voegen. 
+
+Deel 1: Google
+
+Ga naar https://console.developers.google.com/projectselector/apis/library
+
+Log u in met uw google account.
+
+Maak een nieuw project.
+
+![Nieuw project](img/googleprojectmaken.png)
+
+Geef uw project een passende naam. Merk op: u ziet hier ook hoeveel gratis projecten u nog over heeft.
+
+![Projectnaam](img/googleprojectnaam.png)
+
+Zoek de Google+ API
+
+![Google+ API zoeken](img/googlezoekgoogle+api.png)
+
+Schakel de Google+ API in.
+
+![Google+ inschakelen](img/googleinschakelen.png)
+
+Maak inloggegevens.
+
+![inloggegevens maken](img/googleinloggegevensmaken.png)
+
+Selecteer Webserver (bijv. node.js, Tomcat) en Gebruikergegevens. Klik op "Welke gegevens heb ik nodig?".
+
+![Selecteer Webserver en Gebruikergegevens](img/googlewebservergebruikersgegevens.png)
+
+Laat de naam onveranderd (maakt niet echt uit) en voeg deze url "http://localhost:44320/signin-google" toe aan het onderste `https://...` vakje. Let op: http, niet https. https werkt soms niet. Klik op "Client-ID maken".
+
+![Voeg de gegeven url toe](img/googlevoegurltoe.png)
+
+Laat de automatisch ingevulde email onveranderd, en geef een officiële productnaam in. Klik op "Doorgaan".
+
+![Geef een productnaam in](img/google_emailproductnaam.png)
+
+Klik niet op downloaden, wel op "Gereed".
+
+U bent nu klaar met het deel op de Google-website.
+
+![U bent klaar.](img/googleklaar.png)
+
+Sluit deze pagina nog **NIET**!! U heeft nog codes nodig in het volgende deel.
+
+Deel 2: Visual Studio
+
+Ga naar de Startup.cs file.
+
+Zoek de ConfigureServices-method (2e van boven).
+
+Update de method van:
+
+![ConfigureServices-Method OUD](img/ConfigureServicesGoogle1.png)
+
+naar:
+
+![ConfigureServices-Method NIEUW](img/ConfigureServicesGoogle2.png)
+
+Ga terug naar de Google-pagina:
+
+![Google-pagina](img/googleklaar.png)
+
+Klik op "Webclient 1"
+
+![Google-pagina](img/googleklaarcirkel.png)
+
+U ziet bovenaan een Client-ID en Clientgeheim staan. Dit zijn uiterst geheime codes, dus ga er voorzichtig mee om.
+
+Vul nu deze codes in in de startup.cs file van het project, tussen "double quotes". Client-ID bij Client-ID, Clientgeheim bij Clientgeheim.
+
+Deel 3: Poort zetten
+
+Rechtsklik op je project, rechts op je scherm. Selecteer "Properties". 
+
+![Ga naar de project properties](img/projectproperties.png)
+
+Ga vervolgens naar de tab "Debug".
+
+![Ga naar "Debug"](img/ganaardebug.png)
+
+In het midden, rechts naast "Launch browser", ziet u een url die al een poort bevat. verander deze poort naar 44320.
+Ook onderaan naast App URL ziet u een url staan. Verander ook deze poort naar 44320. Let op: beide urls moeten ook http zijn, niet https!
+
+![Voer de poort 44320 in op twee plaatsen](img/poort44320.png)
+
+-- Tussentijdse test --
+
+Sluit in uw browser uw applicatie even, en voer in uw project opnieuw Ctrl + f5 uit. Dit is nodig omdat u de poort hebt veranderd.
+
+Klik in uw navigatiebalk op "Log In", en klik op "Google".
+
+![Ga naar "Log In" en klik op "Google"](img/LogInpage.png)
+
+Selecteer uw email-adres. U krijgt volgende error te zien:
+
+![Error](img/google_error.png)
+
+Klik op de blauwe knop "Apply Migrations". Refresh na een tiental seconden (afhankelijk van hoe snel uw pc werkt...)
+
+U krijgt nu een registerpagina voor u. 
+
+![Register](img/siteRegister.png)
+
+Klik op Register.
+
+U ziet nu bovenaan in uw navigatiebalk "Hello ...!" verschijnen. U bent ingelogd!
+
+![Ingelogd](img/siteHellologgedin.png)
+
 Extra opties: COMING SOON !!
-- google auth
 - home page: update
 - details
 
