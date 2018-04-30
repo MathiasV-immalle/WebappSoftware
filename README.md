@@ -397,12 +397,48 @@ Ga in de map Views naar de map Shared en klik dan op \_Layout.cshtml . Net onder
 
 Controleer maar eens op je site!
 
-Extra opties: COMING SOON !!
-- home page: update
-- details
+## Home Page Update
 
+De reclame van Microsoft op mijn Home Page is niet echt handig... Dus ik wil iets fris, met eigen afbeeldingen. Het carousel wil ik wel behouden, zo kan ik meerdere foto's laten zien. In dit voorbeeld gebruik ik ook 4 foto's, elk met een breedte van 1140 pixels en een hoogte van 360 pixels. Zo zijn ze even groot als de standaard svgs en hebben we zeker geen problemen.
 
+Als je 4 foto's hebt (of je vindt mijn foto's in de map "img/wallpapers", kan je ze best eerst bewerken (de mijne zijn al bewerkt). Als je er tekst bij wil, kan je die er best al bijzetten. Dit is veel moeilijker via de code zelf. Een beetje hacky, maar dat is niet erg.
 
+Houd je foto's even bij de hand. Ga in je project naar wwwroot/images. Sleep je afbeeldingen 1 voor 1 naar deze map. Als ze er alle 4 in staan, mag je de 4 svgs verwijderen.
 
+![Afbeeldingen in wwwroot/images](img/wwwroot_images.png)
+
+Ga in de map Views naar de map Home, en klik op Index.cshtml . 
+
+Hier ziet u de originele code:
+
+![Carousel-code OUD](img/carouselcode1.png)
+
+Hier zijn enkele aanpassingen gemaakt. Zoals u ziet is de hele p tag verwijderd. Dat wil zeggen dat de tekst en de "Learn More"-knop weg zijn. Wilt u deze behouden, verwijder dit dan niet, maar pas de link en dergelijke even aan. Ook ziet u dat de source van de images is aangepast: src="". Doe dit voor alle 4 de carousel-items.
+
+![Carousel-code NIEUW](img/carouselcode2.png)
+
+Ps: Ik heb hier ineens de titel "Home Page" veranderd naar "Home".
+
+-- Tussentijdse test --
+
+![Mooie, frisse afbeeldingen als achtergrond](img/siteHomePage2.png)
+
+De tekst daaronder lijkt misschien niet zo nuttig, maar ik heb hem een tweede leven gegeven. De opmaak is er immers al, dus moeten we enkel nieuwe tekst ingeven! 
+
+Dit is een deel van de origenele code: 
+
+![Home-pagina tekst OUD](img/siteHomePagetekst1.png)
+
+En dit heb ik ervan gemaakt:
+
+![Home-pagina tekst NIEUW](img/siteHomePagetekst2.png)
+
+En voila, uw Home-pagina ziet er al veel beter uit!
+
+![Home-pagina klaar](img/siteHomePageKlaar.png)
+
+COMING: 
+- About-page
+- Contact-page
 
 
