@@ -440,5 +440,6 @@ En voila, uw Home-pagina ziet er al veel beter uit!
 COMING: 
 - About-page
 - Contact-page
-
+- Publish on MS Azure
+- Facebook auth.
 
