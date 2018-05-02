@@ -1,0 +1,12 @@
+C:\Users\mathi\source\repos\webappSOFT\webappSOFT\bin\Debug\netcoreapp2.0\webappSOFT.deps.json
+C:\Users\mathi\source\repos\webappSOFT\webappSOFT\bin\Debug\netcoreapp2.0\webappSOFT.runtimeconfig.json
+C:\Users\mathi\source\repos\webappSOFT\webappSOFT\bin\Debug\netcoreapp2.0\webappSOFT.runtimeconfig.dev.json
+C:\Users\mathi\source\repos\webappSOFT\webappSOFT\bin\Debug\netcoreapp2.0\webappSOFT.dll
+C:\Users\mathi\source\repos\webappSOFT\webappSOFT\bin\Debug\netcoreapp2.0\webappSOFT.pdb
+C:\Users\mathi\source\repos\webappSOFT\webappSOFT\obj\Debug\netcoreapp2.0\webappSOFT.csprojResolveAssemblyReference.cache
+C:\Users\mathi\source\repos\webappSOFT\webappSOFT\obj\Debug\netcoreapp2.0\webappSOFT.csproj.CoreCompileInputs.cache
+C:\Users\mathi\source\repos\webappSOFT\webappSOFT\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\mathi\source\repos\webappSOFT\webappSOFT\obj\Debug\netcoreapp2.0\webappSOFT.AssemblyInfoInputs.cache
+C:\Users\mathi\source\repos\webappSOFT\webappSOFT\obj\Debug\netcoreapp2.0\webappSOFT.AssemblyInfo.cs
+C:\Users\mathi\source\repos\webappSOFT\webappSOFT\obj\Debug\netcoreapp2.0\webappSOFT.dll
+C:\Users\mathi\source\repos\webappSOFT\webappSOFT\obj\Debug\netcoreapp2.0\webappSOFT.pdb
