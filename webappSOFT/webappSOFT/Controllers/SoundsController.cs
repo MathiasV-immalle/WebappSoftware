@@ -43,11 +43,11 @@ namespace webappSOFT.Controllers
                 sounds = sounds.Where(s => s.Genre.Contains(soundGenre));
             }
 
-            var movieGenreVM = new SoundGenre();
-            movieGenreVM.genres = new SelectList(await genreQuery.Distinct().ToListAsync());
-            movieGenreVM.sounds = await sounds.ToListAsync();
+            var soundGenreVM = new SoundGenre();
+            soundGenreVM.genres = new SelectList(await genreQuery.Distinct().ToListAsync());
+            soundGenreVM.sounds = await sounds.ToListAsync();
 
-            return View(movieGenreVM);
+            return View(soundGenreVM);
         }
 
         // GET: Sounds/Details/5
