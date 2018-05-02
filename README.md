@@ -1,6 +1,15 @@
 # WebappSoftware
 
-Stappenplan:
+## Inleiding
+
+Hier ziet u hoe ik mijn webapplicatie heb gemaakt, als giptaak (eindwerk) voor mijn vak Software.
+Dit project is opgedeeld in hoofdstukjes zodat alles duidelijk en overzichtelijk blijft. Telkens ziet u eerst een instructie gevolgd met een afbeelding en op het einde van een hoofdstuk vindt u een link naar de code.
+
+Helemaal onderaan deze lange readme vindt u de ideetjes die (misschien in de toekomst) nog toegevoegd zullen worden.
+
+Vragen, opmerkingen of andere ideetjes zijn altijd welkom.
+
+### 3 - 2 - 1 - GO!
 
 ## Maak een nieuw project aan.
 
@@ -29,11 +38,16 @@ Geef onze Sound enkele properties:
 - ReleaseDate (DateTime)
 - Genre (string)
 ```
+
 ![Sound.cs](img/codesoundmodel.png)
 
 Merk op: Gebruik `[Display(Name = "...")]` om de properties mooier weer te geven. Let op, hiervoor zal u `using System.ComponentModel.DataAnnotations;` moeten toevoegen.
 
 ![Weergave properties](img/siteproperties.png)
+
+### Code:
+
+[Code Sound.cs](webappSOFT/webappSOFT/Models/Sound.cs)
 
 ## Maak een nieuwe controller aan.
 
@@ -120,6 +134,12 @@ U krijgt nu de webpagina met de standaardcode te zien die u heeft ingegeven in S
 ![Database met SeedData](img/sitedatabase.png)
 
 U kan nu beginnen met de extra opties van uw website, zoals sorteren op Genre, Titel of Artist.
+
+### Code:
+
+[Code SeedData.cs](webappSOFT/webappSOFT/Models/SeedData.cs)
+
+[Program.cs](webappSOFT/webappSOFT/Program.cs)
 
 ## Data Sorteren
 
@@ -224,6 +244,14 @@ Probeer eens te filteren op Hardstyle Music.
 Moest u het nog niet geprobeerd hebben, u kan ook op Genre, Title en Artist tegelijk sorteren. Erg handig met grote hoeveelheden data.
 
 Gefeliciteerd, u heeft nu een werkende app. 
+
+### Code:
+
+[Code SoundsController.cs](webappSOFT/webappSOFT/Controllers/SoundsController.cs)
+
+[Code Sounds/Index.cshtml](webappSOFT/webappSOFT/Views/Sounds/Index.cshtml)
+
+[Code SoundGenre.cs](webappSOFT/webappSOFT/Models/SoundGenre.cs)
 
 ## Google Authentication
 
@@ -340,6 +368,10 @@ U ziet nu bovenaan in uw navigatiebalk "Hello ...!" verschijnen. U bent ingelogd
 
 ![Ingelogd](img/siteHellologgedin.png)
 
+### Code:
+
+[Code Startup.cs](webappSOFT/webappSOFT/Startup.cs)
+
 ## Link leggen
 
 Tot hiertoe moesten we steeds /sounds toevoegen aan de url om naar onze webapp te gaan. Hier leg ik uit hoe je dat veranderd.
@@ -360,12 +392,16 @@ naar:
 Test maar eens uit! 
 Ps: Omdat \_Layout.cshtml een 'Shared' file is, zal dit ineens op alle pagina's worden toegepast: de navigatiebalk blijft op alle pagina's hetzelfde.
 
+### Code:
+
+[Code Shared/\_Layout.cshtml](webappSOFT/webappSOFT/Views/Shared/_Layout.cshtml)
+
 ## Titels
 
 Wanneer we onze app bekijken, zien we nog de gewone "Index" titel. Deze wil ik veranderen naar "Sounds".
 Ook hetgeen we in ons google-tab zien helemaal bovenaan de site, wil ik veranderen van "Index - WebApp" naar "Sounds".
 
-Ga in de map Views naar de map Sounds en klik op Index.cshtml .
+Ga in de map Views naar de map Sounds en klik op Index.cshtml.
 
 Verander hier twee keer "Index" naar "Sounds". 
 
@@ -387,6 +423,12 @@ En ook het tabblad heeft een andere naam:
 
 ![Nieuwe tabbladnaam](img/tabbladnaam.png)
 
+### Code:
+
+[Code Sounds/Index.cshtml](webappSOFT/webappSOFT/Views/Sounds/Index.cshtml)
+
+[Code Shared/\_Layout.cshtml](webappSOFT/webappSOFT/Views/Shared/_Layout.cshtml)
+
 ## Copyright
 
 Sommigen zullen ook graag de standaard Copyright willen aanpassen.
@@ -396,6 +438,10 @@ Ga in de map Views naar de map Shared en klik dan op \_Layout.cshtml . Net onder
 ![Nieuwe copyright-tekst](img/copyright.png)
 
 Controleer maar eens op je site!
+
+### Code:
+
+[Code Shared/\_Layout.cshtml](webappSOFT/webappSOFT/Views/Shared/_Layout.cshtml)
 
 ## Home Page Update
 
@@ -437,7 +483,14 @@ En voila, uw Home-pagina ziet er al veel beter uit!
 
 ![Home-pagina klaar](img/siteHomePageKlaar.png)
 
-COMING: 
+### Code:
+
+[Code Home/Index.cshtml](webappSOFT/webappSOFT/Views/Home/Index.cshtml)
+
+[Afbeeldingen](img/wallpapers)
+
+
+## COMING: 
 - About-page
 - Contact-page
 - Publish on MS Azure
