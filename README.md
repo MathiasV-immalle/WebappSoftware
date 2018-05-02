@@ -14,6 +14,7 @@
 - [Titels](https://github.com/MathiasV-immalle/WebappSoftware#titels)
 - [Copyright](https://github.com/MathiasV-immalle/WebappSoftware#copyright)
 - [Home: html update](https://github.com/MathiasV-immalle/WebappSoftware#home-page-update)
+- [Publishing](https://github.com/MathiasV-immalle/WebappSoftware#publishing)
 
 ## Inleiding
 
@@ -503,6 +504,11 @@ En voila, uw Home-pagina ziet er al veel beter uit!
 [Code Home/Index.cshtml](webappSOFT/webappSOFT/Views/Home/Index.cshtml)
 
 [Afbeeldingen](img/wallpapers)
+
+## Publishing
+
+Om mijn site online te zetten zou ik het liefst MS Azure gebruiken. Azure ondersteund .net dus het is mogelijk. Alleen moet ik daarvoor mijn schoolaccount aan de praat krijgen. Ik update dit meteen wanneer ik weet hoe het allemaal werkt.
+
 
 
 ## COMING: 
