@@ -1,5 +1,21 @@
 # WebappSoftware
 
+## Overzicht
+
+- [Inleiding](https://github.com/MathiasV-immalle/WebappSoftware#inleiding)
+- [Start: Nieuw project](https://github.com/MathiasV-immalle/WebappSoftware#maak-een-nieuw-project-aan)
+- [Nieuw Model](https://github.com/MathiasV-immalle/WebappSoftware#maak-een-nieuw-model-aan)
+- [Nieuwe Controller](https://github.com/MathiasV-immalle/WebappSoftware#maak-een-nieuwe-controller-aan)
+- [Local Database](https://github.com/MathiasV-immalle/WebappSoftware#maak-een-local-database-aan)
+- [SeedData](https://github.com/MathiasV-immalle/WebappSoftware#seeddata)
+- [Data Sorteren: form](https://github.com/MathiasV-immalle/WebappSoftware#data-sorteren)
+- [Google Authentication](https://github.com/MathiasV-immalle/WebappSoftware#google-authentication)
+- [Links en navigatiebalk](https://github.com/MathiasV-immalle/WebappSoftware#link-leggen)
+- [Titels](https://github.com/MathiasV-immalle/WebappSoftware#titels)
+- [Copyright](https://github.com/MathiasV-immalle/WebappSoftware#copyright)
+- [Home: html update](https://github.com/MathiasV-immalle/WebappSoftware#home-page-update)
+- Publishing: helemaal onderaan (link werkt niet?)
+
 ## Inleiding
 
 Hier ziet u hoe ik mijn webapplicatie heb gemaakt, als giptaak (eindwerk) voor mijn vak Software.
@@ -488,6 +504,11 @@ En voila, uw Home-pagina ziet er al veel beter uit!
 [Code Home/Index.cshtml](webappSOFT/webappSOFT/Views/Home/Index.cshtml)
 
 [Afbeeldingen](img/wallpapers)
+
+## Publishing
+
+Om mijn site online te zetten zou ik het liefst MS Azure gebruiken. Azure ondersteund .net dus het is mogelijk. Alleen moet ik daarvoor mijn schoolaccount aan de praat krijgen. Ik update dit meteen wanneer ik weet hoe het allemaal werkt.
+
 
 
 ## COMING: 
