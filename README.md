@@ -14,7 +14,6 @@
 - [Titels](https://github.com/MathiasV-immalle/WebappSoftware#titels)
 - [Copyright](https://github.com/MathiasV-immalle/WebappSoftware#copyright)
 - [Home: html update](https://github.com/MathiasV-immalle/WebappSoftware#home-page-update)
-- [Publishing](https://github.com/MathiasV-immalle/WebappSoftware#publishing)
 
 ## Inleiding
 
